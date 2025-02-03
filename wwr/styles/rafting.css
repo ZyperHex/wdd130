@@ -11,17 +11,14 @@
 
 .oswald-uniquifier {
     font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 700; 
+    font-style: normal; 
 }
 
 .roboto-uniquifier {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
     font-style: normal;
-    font-variation-settings: "wdth" 100;
 }
 
 header {
