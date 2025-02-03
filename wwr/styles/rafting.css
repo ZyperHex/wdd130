@@ -1,0 +1,149 @@
+@import url(https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc);
+:root {
+    --primary-color: #c1121f;
+    --secondary-color: #780000;
+    --accent-color1: #fdf0d5;
+    --accent-color2: #003049;
+    --accent-color3: #669bbc;
+
+    --heading-font: "Oswald", sans-serif;
+    --text-font: "Roboto", sans-serif;
+}
+
+
+header {
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+}
+
+header img { 
+    max-height: 50px; 
+    width: auto;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    margin: 0.2rem 0.5rem; 
+}
+
+nav a:hover {
+    color: var(--accent3-color);
+}
+
+body {
+    background-color: var(--accent-color1);
+    font-family: var(--text-font);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center; 
+    margin-bottom: 2rem;
+    overflow: hidden; 
+}
+
+.hero img.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    transform: translate(0, 0); 
+    display: flex;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 40%; 
+}
+
+.hero article img {
+    max-width: 200px;
+    margin-right: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+
+
+a {
+    color:var(--accent-color2);
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    margin-top: 2rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--accent-color1);
+}
+
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.sociallinks a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.sociallinks a:hover {
+    transform: scale(1.1);
+}
+
+.sociallinks a img {
+    max-height: 25px; 
+    width: auto; 
+}
