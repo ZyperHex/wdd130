@@ -26,13 +26,13 @@ header {
     color: white;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between; /* Alinea logo y nav */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 20px; /* Espacio a los lados */
+    padding: 0 20px; 
 }
 
 header img {
-    max-height: 60px; /* Ajusta tamaño del logo */
+    max-height: 60px; 
 }
 
 nav a {
@@ -40,7 +40,7 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s; /* Transición suave de color */
+    transition: color 0.3s; 
 }
 
 nav a:hover {
@@ -73,10 +73,10 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el contenido */
+    transform: translate(-50%, -50%); 
     color: white;
     text-align: center;
-    width: 80%; /* Ancho del contenido */
+    width: 80%; 
 }
 
 .hero h1 {
@@ -136,7 +136,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Newsletter */
+/*  NEWSLETTER */
 .newsletter {
     background-color: var(--accent-color1);
     padding: 40px;
@@ -154,14 +154,32 @@ body {
 
 .newsletter form {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
+    gap: 10px; 
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
-.newsletter input {
+.newsletter label {  
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.newsletter input[type="text"],  
+.newsletter input[type="email"],
+.newsletter textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.newsletter textarea {
+    height: 120px; 
+    resize: vertical; 
 }
 
 .newsletter button {
@@ -172,6 +190,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: auto; 
+    flex-basis: auto; 
 }
 
 .newsletter button:hover {
@@ -190,21 +210,21 @@ body {
 
 .about-content {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes y el texto se ajusten */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px; /* Espacio entre elementos */
+    gap: 20px;
 }
 
 .about-content img {
-    max-width: 45%; /* Ajusta el ancho de las imágenes */
+    max-width: 45%; 
     height: auto;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .about-content p {
-    flex: 1 1 45%; /* El texto ocupa el espacio disponible */
-    text-align: justify; /* Justifica el texto */
+    flex: 1 1 45%; 
+    text-align: justify;
 }
 
 h1, h2, h3 {
@@ -639,5 +659,4 @@ main h2 {
 }
 
 
-/*PRUEBA 1 */
 
